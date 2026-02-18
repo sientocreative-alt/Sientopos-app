@@ -1,0 +1,14 @@
+-- Migration to add multilingual columns to categories table
+ALTER TABLE categories 
+ADD COLUMN IF NOT EXISTS name_en TEXT,
+ADD COLUMN IF NOT EXISTS name_es TEXT,
+ADD COLUMN IF NOT EXISTS name_fr TEXT,
+ADD COLUMN IF NOT EXISTS name_ru TEXT,
+ADD COLUMN IF NOT EXISTS description_en TEXT,
+ADD COLUMN IF NOT EXISTS description_es TEXT,
+ADD COLUMN IF NOT EXISTS description_fr TEXT,
+ADD COLUMN IF NOT EXISTS description_ru TEXT,
+ADD COLUMN IF NOT EXISTS note_en TEXT,
+ADD COLUMN IF NOT EXISTS note_es TEXT,
+ADD COLUMN IF NOT EXISTS note_fr TEXT,
+ADD COLUMN IF NOT EXISTS note_ru TEXT;

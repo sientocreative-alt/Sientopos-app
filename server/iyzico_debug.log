@@ -1,0 +1,204 @@
+[2026-02-17T19:56:59.574Z] 3DS Init Payload: {"amount":"1.00","user":{"ip":"127.0.0.1"}}
+[2026-02-17T19:57:00.682Z] Init Iyzico: Mode=sandbox, BaseUrl=https://sandbox-api.iyzipay.com, APIKey=sandbox-VpWbvjn8UFWD..., SecretKey=sandbox-oNwbKcYeWI4B...
+
+
+--- CALLBACK 2026-02-17T21:30:41.387Z ---
+Headers: {"host":"localhost:5000","connection":"keep-alive","content-length":"42","cache-control":"max-age=0","sec-ch-ua":"\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Google Chrome\";v=\"144\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","origin":"null","content-type":"application/x-www-form-urlencoded","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7","sec-fetch-site":"cross-site","sec-fetch-mode":"navigate","sec-fetch-dest":"document","accept-encoding":"gzip, deflate, br, zstd","accept-language":"tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"}
+Body: {"token":"d8d1274d-9de6-4a43-9b03-cfd1d561de0d"}
+Result: {
+  "status": "success",
+  "locale": "tr",
+  "systemTime": 1771363842507,
+  "price": 9000,
+  "paidPrice": 9000,
+  "installment": 1,
+  "paymentId": "28630295",
+  "fraudStatus": 1,
+  "merchantCommissionRate": 0,
+  "merchantCommissionRateAmount": 0,
+  "iyziCommissionRateAmount": 314.1,
+  "iyziCommissionFee": 0.25,
+  "cardType": "CREDIT_CARD",
+  "cardAssociation": "VISA",
+  "cardFamily": "Maximum",
+  "binNumber": "454359",
+  "lastFourDigits": "0006",
+  "basketId": "BASKET-1771363817162",
+  "currency": "TRY",
+  "itemTransactions": [
+    {
+      "itemId": "27826bee-a3ef-4bfb-9d97-b433f299fe39",
+      "paymentTransactionId": "30595586",
+      "transactionStatus": 2,
+      "price": 9000,
+      "paidPrice": 9000,
+      "merchantCommissionRate": 0,
+      "merchantCommissionRateAmount": 0,
+      "iyziCommissionRateAmount": 314.1,
+      "iyziCommissionFee": 0.25,
+      "blockageRate": 0,
+      "blockageRateAmountMerchant": 0,
+      "blockageRateAmountSubMerchant": 0,
+      "blockageResolvedDate": "2026-02-26 00:00:00",
+      "subMerchantPrice": 0,
+      "subMerchantPayoutRate": 0,
+      "subMerchantPayoutAmount": 0,
+      "merchantPayoutAmount": 8685.65,
+      "convertedPayout": {
+        "paidPrice": 9000,
+        "iyziCommissionRateAmount": 314.1,
+        "iyziCommissionFee": 0.25,
+        "blockageRateAmountMerchant": 0,
+        "blockageRateAmountSubMerchant": 0,
+        "subMerchantPayoutAmount": 0,
+        "merchantPayoutAmount": 8685.65,
+        "iyziConversionRate": 0,
+        "iyziConversionRateAmount": 0,
+        "currency": "TRY"
+      }
+    }
+  ],
+  "authCode": "599279",
+  "phase": "AUTH",
+  "mdStatus": 1,
+  "hostReference": "mock00004iyzihostrfn",
+  "signature": "2883e4206dece2b4e8c565d861ddc62376a7d039dbfc64b13a99be96571408e9",
+  "token": "d8d1274d-9de6-4a43-9b03-cfd1d561de0d",
+  "callbackUrl": "http://localhost:5000/api/payment/callback/iyzico",
+  "paymentStatus": "SUCCESS",
+  "maturityChargeAmount": 0
+}
+
+
+--- CALLBACK 2026-02-17T21:55:49.390Z ---
+Headers: {"host":"localhost:5000","connection":"keep-alive","content-length":"42","cache-control":"max-age=0","sec-ch-ua":"\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Google Chrome\";v=\"144\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","origin":"http://localhost:5173","content-type":"application/x-www-form-urlencoded","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7","sec-fetch-site":"same-site","sec-fetch-mode":"navigate","sec-fetch-user":"?1","sec-fetch-dest":"document","referer":"http://localhost:5173/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7","cookie":"sb-fgpwrqutvybgyvrvmyzu-auth-token=base64-eyJhY2Nlc3NfdG9rZW4iOiJleUpoYkdjaU9pSkZVekkxTmlJc0ltdHBaQ0k2SWpNek5tSmtaRFk1TFdObU1URXROR05sWXkwNE1XUTFMVFUzWlRCa05ERmhaRFk0WlNJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcGMzTWlPaUpvZEhSd2N6b3ZMMlpuY0hkeWNYVjBkbmxpWjNsMmNuWnRlWHAxTG5OMWNHRmlZWE5sTG1OdkwyRjFkR2d2ZGpFaUxDSnpkV0lpT2lJNU5ESmlZV015T1MwM05tVm1MVFExWlRZdFlXRTROaTB3WXpkbU16bGtaVE5tT1RJaUxDSmhkV1FpT2lKaGRYUm9aVzUwYVdOaGRHVmtJaXdpWlhod0lqb3hOelk0T1RFMk5UZzRMQ0pwWVhRaU9qRTNOamc1TVRJNU9EZ3NJbVZ0WVdsc0lqb2lkRzlzWjJGallYQmhZMms1TVVCbmJXRnBiQzVqYjIwaUxDSndhRzl1WlNJNklpSXNJbUZ3Y0Y5dFpYUmhaR0YwWVNJNmV5SndjbTkyYVdSbGNpSTZJbVZ0WVdsc0lpd2ljSEp2ZG1sa1pYSnpJanBiSW1WdFlXbHNJbDE5TENKMWMyVnlYMjFsZEdGa1lYUmhJanA3SW1WdFlXbHNJam9pZEc5c1oyRmpZWEJoWTJrNU1VQm5iV0ZwYkM1amIyMGlMQ0psYldGcGJGOTJaWEpwWm1sbFpDSTZkSEoxWlN3aWNHaHZibVZmZG1WeWFXWnBaV1FpT21aaGJITmxMQ0p6ZFdJaU9pSTVOREppWVdNeU9TMDNObVZtTFRRMVpUWXRZV0U0Tmkwd1l6ZG1NemxrWlRObU9USWlmU3dpY205c1pTSTZJbUYxZEdobGJuUnBZMkYwWldRaUxDSmhZV3dpT2lKaFlXd3hJaXdpWVcxeUlqcGJleUp0WlhSb2IyUWlPaUpsYldGcGJDOXphV2R1ZFhBaUxDSjBhVzFsYzNSaGJYQWlPakUzTmpnM01EUTBNRFI5WFN3aWMyVnpjMmx2Ymw5cFpDSTZJbU13TWprNE5qbGtMV1ZqTURZdE5HRmhZeTA1T0Rsa0xUTTFaak0zTlRnM09XWTBNQ0lzSW1selgyRnViMjU1Ylc5MWN5STZabUZzYzJWOS5jTDBST3JVNWZ2Tjk5eXF5Q1lmWUNDM3ZzLTBqVUhIeXh4M0swRXFvZ3lfRmZxWXd6TDFkOVpVWXRYZTlsRFVnQ3RjV0JGTVFTUThfUjNNNTVZMEJnQSIsInRva2VuX3R5cGUiOiJiZWFyZXIiLCJleHBpcmVzX2luIjozNjAwLCJleHBpcmVzX2F0IjoxNzY4OTE2NTg4LCJyZWZyZXNoX3Rva2VuIjoiNTJua3ptY2E0bXBrIiwidXNlciI6eyJpZCI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiIsImF1ZCI6ImF1dGhlbnRpY2F0ZWQiLCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImVtYWlsIjoidG9sZ2FjYXBhY2k5MUBnbWFpbC5jb20iLCJlbWFpbF9jb25maXJtZWRfYXQiOiIyMDI2LTAxLTE4VDAyOjQ2OjQxLjQ0MzY0N1oiLCJwaG9uZSI6IiIsImNvbmZpcm1hdGlvbl9zZW50X2F0IjoiMjAyNi0wMS0xOFQwMjo0NjoyMC42Njg2NDZaIiwiY29uZmlybWVkX2F0IjoiMjAyNi0wMS0xOFQwMjo0Njo0MS40NDM2NDdaIiwibGFzdF9zaWduX2luX2F0IjoiMjAyNi0wMS0xOFQwMjo0Njo0NC4yOTY1MzZaIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiJ9LCJpZGVudGl0aWVzIjpbeyJpZGVudGl0eV9pZCI6ImMyNGMzY2EyLTQ2NzEtNDJhMy04ZGY3LTBhNDkzNDFkNTQ3ZiIsImlkIjoiOTQyYmFjMjktNzZlZi00NWU2LWFhODYtMGM3ZjM5ZGUzZjkyIiwidXNlcl9pZCI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiIsImlkZW50aXR5X2RhdGEiOnsiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiJ9LCJwcm92aWRlciI6ImVtYWlsIiwibGFzdF9zaWduX2luX2F0IjoiMjAyNi0wMS0xOFQwMjo0NjoyMC42NDgzNjdaIiwiY3JlYXRlZF9hdCI6IjIwMjYtMDEtMThUMDI6NDY6MjAuNjQ4NDMzWiIsInVwZGF0ZWRfYXQiOiIyMDI2LTAxLTE4VDAyOjQ2OjIwLjY0ODQzM1oiLCJlbWFpbCI6InRvbGdhY2FwYWNpOTFAZ21haWwuY29tIn1dLCJjcmVhdGVkX2F0IjoiMjAyNi0wMS0xOFQwMjo0NjoyMC42MjAyNDNaIiwidXBkYXRlZF9hdCI6IjIwMjYtMDEtMjBUMTI6NDM6MDguMjk1OTg2WiIsImlzX2Fub255bW91cyI6ZmFsc2V9fQ; sb-jsoneeamgpranczygpif-auth-token.0=base64-eyJhY2Nlc3NfdG9rZW4iOiJleUpoYkdjaU9pSkZVekkxTmlJc0ltdHBaQ0k2SWpNd09EUTJOek15TFdVNFpqY3RORGRpTXkxaFpESmpMV0ZpWXpjNU9UYzBPRGd5WVNJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcGMzTWlPaUpvZEhSd2N6b3ZMMnB6YjI1bFpXRnRaM0J5WVc1amVubG5jR2xtTG5OMWNHRmlZWE5sTG1OdkwyRjFkR2d2ZGpFaUxDSnpkV0lpT2lJME5qbGtNMll6T0MwM1pEUmpMVFF6WTJJdFlXRmpNQzFsT1dJd09UQmpOekF3TnpJaUxDSmhkV1FpT2lKaGRYUm9aVzUwYVdOaGRHVmtJaXdpWlhod0lqb3hOemN3TVRNNE1qUTRMQ0pwWVhRaU9qRTNOekF4TXpRMk5EZ3NJbVZ0WVdsc0lqb2lkRzlzWjJGallYQmhZMms1TVVCbmJXRnBiQzVqYjIwaUxDSndhRzl1WlNJNklpSXNJbUZ3Y0Y5dFpYUmhaR0YwWVNJNmV5SndjbTkyYVdSbGNpSTZJbVZ0WVdsc0lpd2ljSEp2ZG1sa1pYSnpJanBiSW1WdFlXbHNJbDE5TENKMWMyVnlYMjFsZEdGa1lYUmhJanA3SW1WdFlXbHNJam9pZEc5c1oyRmpZWEJoWTJrNU1VQm5iV0ZwYkM1amIyMGlMQ0psYldGcGJGOTJaWEpwWm1sbFpDSTZkSEoxWlN3aVptbHljM1JmYm1GdFpTSTZJblJ2YkdkaElpd2lablZzYkY5dVlXMWxJam9pVkc5c1oyRWd3NGRoY0dGanhMRWlMQ0pzWVhOMFgyNWhiV1VpT2lMRHAyRndZV1BFc1NJc0luQm9iMjVsWDNabGNtbG1hV1ZrSWpwbVlXeHpaU3dpYzNWaUlqb2lORFk1WkRObU16Z3ROMlEwWXkwME0yTmlMV0ZoWXpBdFpUbGlNRGt3WXpjd01EY3lJbjBzSW5KdmJHVWlPaUpoZFhSb1pXNTBhV05oZEdWa0lpd2lZV0ZzSWpvaVlXRnNNU0lzSW1GdGNpSTZXM3NpYldWMGFHOWtJam9pY0dGemMzZHZjbVFpTENKMGFXMWxjM1JoYlhBaU9qRTNOamcwT0RBNE9UbDlYU3dpYzJWemMybHZibDlwWkNJNklqbGpNVFF4Tm1RMkxUYzFZekV0TkdRMVppMWhabVJsTFRWa00yVTBNbUkzWW1Oak5DSXNJbWx6WDJGdWIyNTViVzkxY3lJNlptRnNjMlY5Lnh5cU43cm1USTRmSllTNUFRVWN1WTR5RUNVQ2t6eUFFQVlwWlBaTWFUVWlqMXo0R1hBajNfOHd3VS0yYUZMamZVMlJIUXN1T2FMN3RWUkNyOEpYd0tnIiwidG9rZW5fdHlwZSI6ImJlYXJlciIsImV4cGlyZXNfaW4iOjM2MDAsImV4cGlyZXNfYXQiOjE3NzAxMzgyNDgsInJlZnJlc2hfdG9rZW4iOiI3aHppbndzemF3d3AiLCJ1c2VyIjp7ImlkIjoiNDY5ZDNmMzgtN2Q0Yy00M2NiLWFhYzAtZTliMDkwYzcwMDcyIiwiYXVkIjoiYXV0aGVudGljYXRlZCIsInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX2NvbmZpcm1lZF9hdCI6IjIwMjYtMDEtMTFUMjI6NTM6NDcuNzA2MzE2WiIsInBob25lIjoiIiwiY29uZmlybWF0aW9uX3NlbnRfYXQiOiIyMDI2LTAxLTExVDIyOjUzOjAzLjIxMDMwNloiLCJjb25maXJtZWRfYXQiOiIyMDI2LTAxLTExVDIyOjUzOjQ3LjcwNjMxNloiLCJsYXN0X3NpZ25faW5fYXQiOiIyMDI2LTAxLTE3VDE5OjExOjQ2Ljg0MzcxMloiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6eyJlbWFpbCI6InRvbGdhY2FwYWNpOTFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcnN0X25hbWUiOiJ0b2xnYSIsImZ1bGxfbmFtZSI6IlRvbGdhIMOHYXBhY8SxIiwibGFzdF9uYW1lIjoiw6dhcGFjxLEiLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6IjQ2OWQzZjM4LTdkNGMtNDNjYi1hYWMwLWU5YjA5MGM3MDA3MiJ9LCJpZGVudGl0aWVzIjpbeyJpZGVudGl0eV9pZCI6ImQxNjM0ZmE2LWFlNmMtNGQ5NC05ODUwLTRmYjA4OTY5YjU1OSIsImlkIjoiNDY5ZDNmMzgtN2Q0Yy00M2NiLWFhYzAtZTliMDkwYzcwMDcyIiwidXNlcl9pZCI6IjQ2OWQzZjM4LTdkNGMtNDNjYi1hYWMwLWU5YjA5MGM3MDA3MiIsImlkZW50aXR5X2RhdGEiOnsiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJzdF9uYW1lIjoidG9sZ2EiLCJsYXN0X25hbWUiOiLDp2FwYWPEsSIsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwic3ViIjoiNDY5ZDNmMzgtN2Q0Yy00M2NiLWFhYzAtZTliMDkwYzcwMDcyIn0sInByb3ZpZGVyIjoiZW1haWwiLCJsYXN0X3NpZ25faW5fYXQiOiIyMDI2LTAxLTExVDIyOjUzOjAzLjE4MjY3MVoiLCJjcmVhdGVkX2F0IjoiMjAyNi0wMS0xMVQyMjo1MzowMy4xODI3MjVaIiwidXBkYXRlZF9hdCI6IjIwMjYtMDEtMTFUMjI6NTM6MDMuMTgyNzI1WiIsImVtYWlsIjoidG9sZ2FjYXBhY2k5MUBnbWFpbC5jb20ifV0sImNyZWF0ZWRfYXQiOiIyMDI2LTAxLTExVDIyOjUzOjAzLjEzNTgwNFoiLCJ1cGRhdGVkX2F0IjoiMjAyNi0wMi0wM1QxNjowNDowOC41NDc2M; sb-jsoneeamgpranczygpif-auth-token.1=jlaIiwiaXNfYW5vbnltb3VzIjpmYWxzZX19"}
+Body: {"token":"d1b50fcd-cec7-4328-9903-e49443541915"}
+Result: {
+  "status": "success",
+  "locale": "tr",
+  "systemTime": 1771365349844,
+  "price": 9000,
+  "paidPrice": 10099.88,
+  "installment": 6,
+  "paymentId": "28630448",
+  "fraudStatus": 1,
+  "merchantCommissionRate": 12.22088889,
+  "merchantCommissionRateAmount": 1099.88,
+  "iyziCommissionRateAmount": 1413.9832,
+  "iyziCommissionFee": 0.25,
+  "cardType": "CREDIT_CARD",
+  "cardAssociation": "VISA",
+  "cardFamily": "Maximum",
+  "binNumber": "454359",
+  "lastFourDigits": "0006",
+  "basketId": "TRX-1771365316805-852",
+  "currency": "TRY",
+  "itemTransactions": [
+    {
+      "itemId": "27826bee-a3ef-4bfb-9d97-b433f299fe39",
+      "paymentTransactionId": "30595748",
+      "transactionStatus": 2,
+      "price": 9000,
+      "paidPrice": 10099.8800001,
+      "merchantCommissionRate": 12.22088889,
+      "merchantCommissionRateAmount": 1099.8800001,
+      "iyziCommissionRateAmount": 1413.98320001,
+      "iyziCommissionFee": 0.25,
+      "blockageRate": 0,
+      "blockageRateAmountMerchant": 0,
+      "blockageRateAmountSubMerchant": 0,
+      "blockageResolvedDate": "2026-02-26 00:00:00",
+      "subMerchantPrice": 0,
+      "subMerchantPayoutRate": 0,
+      "subMerchantPayoutAmount": 0,
+      "merchantPayoutAmount": 8685.64680009,
+      "convertedPayout": {
+        "paidPrice": 10099.8800001,
+        "iyziCommissionRateAmount": 1413.98320001,
+        "iyziCommissionFee": 0.25,
+        "blockageRateAmountMerchant": 0,
+        "blockageRateAmountSubMerchant": 0,
+        "subMerchantPayoutAmount": 0,
+        "merchantPayoutAmount": 8685.64680009,
+        "iyziConversionRate": 0,
+        "iyziConversionRateAmount": 0,
+        "currency": "TRY"
+      }
+    }
+  ],
+  "authCode": "766015",
+  "phase": "AUTH",
+  "hostReference": "mock00004iyzihostrfn",
+  "signature": "482288219cb9305eaea200dba4855a597d23733a0c8229886e5a1ad2dd524699",
+  "token": "d1b50fcd-cec7-4328-9903-e49443541915",
+  "callbackUrl": "http://localhost:5000/api/payment/callback/iyzico",
+  "paymentStatus": "SUCCESS",
+  "maturityChargeAmount": 1099.88
+}
+
+
+--- CALLBACK 2026-02-17T22:54:11.272Z ---
+Headers: {"host":"localhost:5000","connection":"keep-alive","content-length":"42","cache-control":"max-age=0","sec-ch-ua":"\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Google Chrome\";v=\"144\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","origin":"http://localhost:5173","content-type":"application/x-www-form-urlencoded","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7","sec-fetch-site":"same-site","sec-fetch-mode":"navigate","sec-fetch-user":"?1","sec-fetch-dest":"document","referer":"http://localhost:5173/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7","cookie":"sb-fgpwrqutvybgyvrvmyzu-auth-token=base64-eyJhY2Nlc3NfdG9rZW4iOiJleUpoYkdjaU9pSkZVekkxTmlJc0ltdHBaQ0k2SWpNek5tSmtaRFk1TFdObU1URXROR05sWXkwNE1XUTFMVFUzWlRCa05ERmhaRFk0WlNJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcGMzTWlPaUpvZEhSd2N6b3ZMMlpuY0hkeWNYVjBkbmxpWjNsMmNuWnRlWHAxTG5OMWNHRmlZWE5sTG1OdkwyRjFkR2d2ZGpFaUxDSnpkV0lpT2lJNU5ESmlZV015T1MwM05tVm1MVFExWlRZdFlXRTROaTB3WXpkbU16bGtaVE5tT1RJaUxDSmhkV1FpT2lKaGRYUm9aVzUwYVdOaGRHVmtJaXdpWlhod0lqb3hOelk0T1RFMk5UZzRMQ0pwWVhRaU9qRTNOamc1TVRJNU9EZ3NJbVZ0WVdsc0lqb2lkRzlzWjJGallYQmhZMms1TVVCbmJXRnBiQzVqYjIwaUxDSndhRzl1WlNJNklpSXNJbUZ3Y0Y5dFpYUmhaR0YwWVNJNmV5SndjbTkyYVdSbGNpSTZJbVZ0WVdsc0lpd2ljSEp2ZG1sa1pYSnpJanBiSW1WdFlXbHNJbDE5TENKMWMyVnlYMjFsZEdGa1lYUmhJanA3SW1WdFlXbHNJam9pZEc5c1oyRmpZWEJoWTJrNU1VQm5iV0ZwYkM1amIyMGlMQ0psYldGcGJGOTJaWEpwWm1sbFpDSTZkSEoxWlN3aWNHaHZibVZmZG1WeWFXWnBaV1FpT21aaGJITmxMQ0p6ZFdJaU9pSTVOREppWVdNeU9TMDNObVZtTFRRMVpUWXRZV0U0Tmkwd1l6ZG1NemxrWlRObU9USWlmU3dpY205c1pTSTZJbUYxZEdobGJuUnBZMkYwWldRaUxDSmhZV3dpT2lKaFlXd3hJaXdpWVcxeUlqcGJleUp0WlhSb2IyUWlPaUpsYldGcGJDOXphV2R1ZFhBaUxDSjBhVzFsYzNSaGJYQWlPakUzTmpnM01EUTBNRFI5WFN3aWMyVnpjMmx2Ymw5cFpDSTZJbU13TWprNE5qbGtMV1ZqTURZdE5HRmhZeTA1T0Rsa0xUTTFaak0zTlRnM09XWTBNQ0lzSW1selgyRnViMjU1Ylc5MWN5STZabUZzYzJWOS5jTDBST3JVNWZ2Tjk5eXF5Q1lmWUNDM3ZzLTBqVUhIeXh4M0swRXFvZ3lfRmZxWXd6TDFkOVpVWXRYZTlsRFVnQ3RjV0JGTVFTUThfUjNNNTVZMEJnQSIsInRva2VuX3R5cGUiOiJiZWFyZXIiLCJleHBpcmVzX2luIjozNjAwLCJleHBpcmVzX2F0IjoxNzY4OTE2NTg4LCJyZWZyZXNoX3Rva2VuIjoiNTJua3ptY2E0bXBrIiwidXNlciI6eyJpZCI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiIsImF1ZCI6ImF1dGhlbnRpY2F0ZWQiLCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImVtYWlsIjoidG9sZ2FjYXBhY2k5MUBnbWFpbC5jb20iLCJlbWFpbF9jb25maXJtZWRfYXQiOiIyMDI2LTAxLTE4VDAyOjQ2OjQxLjQ0MzY0N1oiLCJwaG9uZSI6IiIsImNvbmZpcm1hdGlvbl9zZW50X2F0IjoiMjAyNi0wMS0xOFQwMjo0NjoyMC42Njg2NDZaIiwiY29uZmlybWVkX2F0IjoiMjAyNi0wMS0xOFQwMjo0Njo0MS40NDM2NDdaIiwibGFzdF9zaWduX2luX2F0IjoiMjAyNi0wMS0xOFQwMjo0Njo0NC4yOTY1MzZaIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiJ9LCJpZGVudGl0aWVzIjpbeyJpZGVudGl0eV9pZCI6ImMyNGMzY2EyLTQ2NzEtNDJhMy04ZGY3LTBhNDkzNDFkNTQ3ZiIsImlkIjoiOTQyYmFjMjktNzZlZi00NWU2LWFhODYtMGM3ZjM5ZGUzZjkyIiwidXNlcl9pZCI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiIsImlkZW50aXR5X2RhdGEiOnsiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiJ9LCJwcm92aWRlciI6ImVtYWlsIiwibGFzdF9zaWduX2luX2F0IjoiMjAyNi0wMS0xOFQwMjo0NjoyMC42NDgzNjdaIiwiY3JlYXRlZF9hdCI6IjIwMjYtMDEtMThUMDI6NDY6MjAuNjQ4NDMzWiIsInVwZGF0ZWRfYXQiOiIyMDI2LTAxLTE4VDAyOjQ2OjIwLjY0ODQzM1oiLCJlbWFpbCI6InRvbGdhY2FwYWNpOTFAZ21haWwuY29tIn1dLCJjcmVhdGVkX2F0IjoiMjAyNi0wMS0xOFQwMjo0NjoyMC42MjAyNDNaIiwidXBkYXRlZF9hdCI6IjIwMjYtMDEtMjBUMTI6NDM6MDguMjk1OTg2WiIsImlzX2Fub255bW91cyI6ZmFsc2V9fQ; sb-jsoneeamgpranczygpif-auth-token.0=base64-eyJhY2Nlc3NfdG9rZW4iOiJleUpoYkdjaU9pSkZVekkxTmlJc0ltdHBaQ0k2SWpNd09EUTJOek15TFdVNFpqY3RORGRpTXkxaFpESmpMV0ZpWXpjNU9UYzBPRGd5WVNJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcGMzTWlPaUpvZEhSd2N6b3ZMMnB6YjI1bFpXRnRaM0J5WVc1amVubG5jR2xtTG5OMWNHRmlZWE5sTG1OdkwyRjFkR2d2ZGpFaUxDSnpkV0lpT2lJME5qbGtNMll6T0MwM1pEUmpMVFF6WTJJdFlXRmpNQzFsT1dJd09UQmpOekF3TnpJaUxDSmhkV1FpT2lKaGRYUm9aVzUwYVdOaGRHVmtJaXdpWlhod0lqb3hOemN3TVRNNE1qUTRMQ0pwWVhRaU9qRTNOekF4TXpRMk5EZ3NJbVZ0WVdsc0lqb2lkRzlzWjJGallYQmhZMms1TVVCbmJXRnBiQzVqYjIwaUxDSndhRzl1WlNJNklpSXNJbUZ3Y0Y5dFpYUmhaR0YwWVNJNmV5SndjbTkyYVdSbGNpSTZJbVZ0WVdsc0lpd2ljSEp2ZG1sa1pYSnpJanBiSW1WdFlXbHNJbDE5TENKMWMyVnlYMjFsZEdGa1lYUmhJanA3SW1WdFlXbHNJam9pZEc5c1oyRmpZWEJoWTJrNU1VQm5iV0ZwYkM1amIyMGlMQ0psYldGcGJGOTJaWEpwWm1sbFpDSTZkSEoxWlN3aVptbHljM1JmYm1GdFpTSTZJblJ2YkdkaElpd2lablZzYkY5dVlXMWxJam9pVkc5c1oyRWd3NGRoY0dGanhMRWlMQ0pzWVhOMFgyNWhiV1VpT2lMRHAyRndZV1BFc1NJc0luQm9iMjVsWDNabGNtbG1hV1ZrSWpwbVlXeHpaU3dpYzNWaUlqb2lORFk1WkRObU16Z3ROMlEwWXkwME0yTmlMV0ZoWXpBdFpUbGlNRGt3WXpjd01EY3lJbjBzSW5KdmJHVWlPaUpoZFhSb1pXNTBhV05oZEdWa0lpd2lZV0ZzSWpvaVlXRnNNU0lzSW1GdGNpSTZXM3NpYldWMGFHOWtJam9pY0dGemMzZHZjbVFpTENKMGFXMWxjM1JoYlhBaU9qRTNOamcwT0RBNE9UbDlYU3dpYzJWemMybHZibDlwWkNJNklqbGpNVFF4Tm1RMkxUYzFZekV0TkdRMVppMWhabVJsTFRWa00yVTBNbUkzWW1Oak5DSXNJbWx6WDJGdWIyNTViVzkxY3lJNlptRnNjMlY5Lnh5cU43cm1USTRmSllTNUFRVWN1WTR5RUNVQ2t6eUFFQVlwWlBaTWFUVWlqMXo0R1hBajNfOHd3VS0yYUZMamZVMlJIUXN1T2FMN3RWUkNyOEpYd0tnIiwidG9rZW5fdHlwZSI6ImJlYXJlciIsImV4cGlyZXNfaW4iOjM2MDAsImV4cGlyZXNfYXQiOjE3NzAxMzgyNDgsInJlZnJlc2hfdG9rZW4iOiI3aHppbndzemF3d3AiLCJ1c2VyIjp7ImlkIjoiNDY5ZDNmMzgtN2Q0Yy00M2NiLWFhYzAtZTliMDkwYzcwMDcyIiwiYXVkIjoiYXV0aGVudGljYXRlZCIsInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX2NvbmZpcm1lZF9hdCI6IjIwMjYtMDEtMTFUMjI6NTM6NDcuNzA2MzE2WiIsInBob25lIjoiIiwiY29uZmlybWF0aW9uX3NlbnRfYXQiOiIyMDI2LTAxLTExVDIyOjUzOjAzLjIxMDMwNloiLCJjb25maXJtZWRfYXQiOiIyMDI2LTAxLTExVDIyOjUzOjQ3LjcwNjMxNloiLCJsYXN0X3NpZ25faW5fYXQiOiIyMDI2LTAxLTE3VDE5OjExOjQ2Ljg0MzcxMloiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6eyJlbWFpbCI6InRvbGdhY2FwYWNpOTFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcnN0X25hbWUiOiJ0b2xnYSIsImZ1bGxfbmFtZSI6IlRvbGdhIMOHYXBhY8SxIiwibGFzdF9uYW1lIjoiw6dhcGFjxLEiLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6IjQ2OWQzZjM4LTdkNGMtNDNjYi1hYWMwLWU5YjA5MGM3MDA3MiJ9LCJpZGVudGl0aWVzIjpbeyJpZGVudGl0eV9pZCI6ImQxNjM0ZmE2LWFlNmMtNGQ5NC05ODUwLTRmYjA4OTY5YjU1OSIsImlkIjoiNDY5ZDNmMzgtN2Q0Yy00M2NiLWFhYzAtZTliMDkwYzcwMDcyIiwidXNlcl9pZCI6IjQ2OWQzZjM4LTdkNGMtNDNjYi1hYWMwLWU5YjA5MGM3MDA3MiIsImlkZW50aXR5X2RhdGEiOnsiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJzdF9uYW1lIjoidG9sZ2EiLCJsYXN0X25hbWUiOiLDp2FwYWPEsSIsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwic3ViIjoiNDY5ZDNmMzgtN2Q0Yy00M2NiLWFhYzAtZTliMDkwYzcwMDcyIn0sInByb3ZpZGVyIjoiZW1haWwiLCJsYXN0X3NpZ25faW5fYXQiOiIyMDI2LTAxLTExVDIyOjUzOjAzLjE4MjY3MVoiLCJjcmVhdGVkX2F0IjoiMjAyNi0wMS0xMVQyMjo1MzowMy4xODI3MjVaIiwidXBkYXRlZF9hdCI6IjIwMjYtMDEtMTFUMjI6NTM6MDMuMTgyNzI1WiIsImVtYWlsIjoidG9sZ2FjYXBhY2k5MUBnbWFpbC5jb20ifV0sImNyZWF0ZWRfYXQiOiIyMDI2LTAxLTExVDIyOjUzOjAzLjEzNTgwNFoiLCJ1cGRhdGVkX2F0IjoiMjAyNi0wMi0wM1QxNjowNDowOC41NDc2M; sb-jsoneeamgpranczygpif-auth-token.1=jlaIiwiaXNfYW5vbnltb3VzIjpmYWxzZX19"}
+Body: {"token":"a1e47807-0bf3-4295-8e18-a36c129d2638"}
+Result: {
+  "status": "success",
+  "locale": "tr",
+  "systemTime": 1771368851414,
+  "price": 9000,
+  "paidPrice": 11627.71,
+  "installment": 12,
+  "paymentId": "28630562",
+  "fraudStatus": 1,
+  "merchantCommissionRate": 29.19677778,
+  "merchantCommissionRateAmount": 2627.71,
+  "iyziCommissionRateAmount": 2941.81063,
+  "iyziCommissionFee": 0.25,
+  "cardType": "CREDIT_CARD",
+  "cardAssociation": "TROY",
+  "cardFamily": "World",
+  "binNumber": "650170",
+  "lastFourDigits": "7183",
+  "basketId": "TRX-1771368832289-378",
+  "currency": "TRY",
+  "itemTransactions": [
+    {
+      "itemId": "27826bee-a3ef-4bfb-9d97-b433f299fe39",
+      "paymentTransactionId": "30595850",
+      "transactionStatus": 2,
+      "price": 9000,
+      "paidPrice": 11627.7100002,
+      "merchantCommissionRate": 29.19677778,
+      "merchantCommissionRateAmount": 2627.7100002,
+      "iyziCommissionRateAmount": 2941.81063005,
+      "iyziCommissionFee": 0.25,
+      "blockageRate": 0,
+      "blockageRateAmountMerchant": 0,
+      "blockageRateAmountSubMerchant": 0,
+      "blockageResolvedDate": "2026-02-26 00:00:00",
+      "subMerchantPrice": 0,
+      "subMerchantPayoutRate": 0,
+      "subMerchantPayoutAmount": 0,
+      "merchantPayoutAmount": 8685.64937015,
+      "convertedPayout": {
+        "paidPrice": 11627.7100002,
+        "iyziCommissionRateAmount": 2941.81063005,
+        "iyziCommissionFee": 0.25,
+        "blockageRateAmountMerchant": 0,
+        "blockageRateAmountSubMerchant": 0,
+        "subMerchantPayoutAmount": 0,
+        "merchantPayoutAmount": 8685.64937015,
+        "iyziConversionRate": 0,
+        "iyziConversionRateAmount": 0,
+        "currency": "TRY"
+      }
+    }
+  ],
+  "authCode": "223593",
+  "phase": "AUTH",
+  "hostReference": "mock00052iyzihostrfn",
+  "signature": "3c6cf435d913d495bfe3ca9edb91ef695627587ed6074967692da8a3fbed5d4a",
+  "token": "a1e47807-0bf3-4295-8e18-a36c129d2638",
+  "callbackUrl": "http://localhost:5000/api/payment/callback/iyzico",
+  "paymentStatus": "SUCCESS",
+  "maturityChargeAmount": 2627.71
+}

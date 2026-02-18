@@ -1,0 +1,19 @@
+Testing PayTR Token Generation... 
+Loaded Credentials: {
+  "merchantId": "123456",
+  "testMode": "1",
+  "hasKey": true,
+  "hasSalt": true
+}
+Generating token with params: {
+  "user_ip": "127.0.0.1",
+  "merchant_oid": "IN1771101461268",
+  "email": "test@example.com",
+  "payment_amount": "1.00",
+  "payment_type": "card",
+  "installment_count": 0,
+  "currency": "TL",
+  "test_mode": "1",
+  "non_3d": "0"
+}
+Generated Token: "S0Lc56bA0ag5jro+LJaaggCYeKoj/qbx7hlsP3WxL28="

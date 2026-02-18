@@ -1,0 +1,6 @@
+Recurring Job Error (Fetch): {
+  code: 'PGRST200',
+  details: "Searched for a foreign key relationship between 'subscriptions' and 'business_cards' in the schema 'public', but no matches were found.",
+  hint: "Perhaps you meant 'businesses' instead of 'business_cards'.",
+  message: "Could not find a relationship between 'subscriptions' and 'business_cards' in the schema cache"
+}

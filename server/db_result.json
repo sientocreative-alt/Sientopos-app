@@ -1,0 +1,127 @@
+{
+  "scan_time": "2026-02-17T21:29:33.583Z",
+  "business": null,
+  "transactions": [
+    {
+      "id": "f96f8e01-aa8f-47e8-af34-a8c86804904a",
+      "merchant_oid": "71d385df-b120-4733-af74-5cfca1108e0a|27826bee-a3ef-4bfb-9d97-b433f299fe39|yearly",
+      "business_id": "71d385df-b120-4733-af74-5cfca1108e0a",
+      "amount": 9000,
+      "currency": "TRY",
+      "status": "pending",
+      "paytr_ref": null,
+      "metadata": {
+        "type": "subscription_initial",
+        "period": "yearly",
+        "plan_id": "27826bee-a3ef-4bfb-9d97-b433f299fe39"
+      },
+      "created_at": "2026-02-17T20:54:53.15+00:00",
+      "updated_at": "2026-02-17T20:54:52.94164+00:00"
+    },
+    {
+      "id": "0a4e92f8-def8-42ba-b247-5e3ba5b0f819",
+      "merchant_oid": "SUBInit858bc160ff1771112104118",
+      "business_id": "858bc160-fffa-4d75-bd33-0111df8b881c",
+      "amount": 950,
+      "currency": "TL",
+      "status": "pending",
+      "paytr_ref": null,
+      "metadata": {
+        "type": "subscription_initial",
+        "period": "monthly",
+        "plan_id": "27826bee-a3ef-4bfb-9d97-b433f299fe39",
+        "save_card": true
+      },
+      "created_at": "2026-02-14T23:35:04.317564+00:00",
+      "updated_at": "2026-02-14T23:35:04.317564+00:00"
+    },
+    {
+      "id": "3f7f6d86-8c33-4713-a8f3-c70668404909",
+      "merchant_oid": "SUBInit858bc160ff1771111965083",
+      "business_id": "858bc160-fffa-4d75-bd33-0111df8b881c",
+      "amount": 950,
+      "currency": "TL",
+      "status": "pending",
+      "paytr_ref": null,
+      "metadata": {
+        "type": "subscription_initial",
+        "period": "monthly",
+        "plan_id": "27826bee-a3ef-4bfb-9d97-b433f299fe39",
+        "save_card": true
+      },
+      "created_at": "2026-02-14T23:32:45.294584+00:00",
+      "updated_at": "2026-02-14T23:32:45.294584+00:00"
+    }
+  ],
+  "commissions": [],
+  "plans": [
+    {
+      "id": "a8861197-745a-4615-a645-27cab0f96811",
+      "name": "Test Plan",
+      "description": "Test",
+      "monthly_price": 10,
+      "yearly_price": 100,
+      "currency": "TL",
+      "features": [
+        "Test Feature"
+      ],
+      "is_active": false,
+      "created_at": "2026-02-14T17:47:49.848897+00:00",
+      "updated_at": "2026-02-14T17:49:53.35+00:00",
+      "iyzico_product_reference_code": null,
+      "iyzico_monthly_plan_reference_code": null,
+      "iyzico_yearly_plan_reference_code": null,
+      "external_product_id": null,
+      "external_plan_id_monthly": null,
+      "external_plan_id_yearly": null,
+      "yearly_campaign_active": false
+    },
+    {
+      "id": "50c675ea-547a-466a-9220-2d1ff72f8b5c",
+      "name": "Başlangıç Paketi",
+      "description": "Küçük işletmeler için ideal.",
+      "monthly_price": 100,
+      "yearly_price": 1000,
+      "currency": "TL",
+      "features": [
+        "Sınırsız Masa",
+        "QR Menü",
+        "7/24 Destek"
+      ],
+      "is_active": false,
+      "created_at": "2026-02-14T17:16:33.986505+00:00",
+      "updated_at": "2026-02-14T17:49:57.476+00:00",
+      "iyzico_product_reference_code": null,
+      "iyzico_monthly_plan_reference_code": null,
+      "iyzico_yearly_plan_reference_code": null,
+      "external_product_id": null,
+      "external_plan_id_monthly": null,
+      "external_plan_id_yearly": null,
+      "yearly_campaign_active": false
+    },
+    {
+      "id": "27826bee-a3ef-4bfb-9d97-b433f299fe39",
+      "name": "Profesyonel Paket",
+      "description": "Büyümek isteyen işletmeler için.",
+      "monthly_price": 950,
+      "yearly_price": 9000,
+      "currency": "TL",
+      "features": [
+        "Tüm Özellikler",
+        "Öncelikli Destek",
+        "Yıllık Raporlama",
+        "Stok Takibi"
+      ],
+      "is_active": true,
+      "created_at": "2026-02-14T17:16:33.986505+00:00",
+      "updated_at": "2026-02-17T21:13:07.274+00:00",
+      "iyzico_product_reference_code": null,
+      "iyzico_monthly_plan_reference_code": null,
+      "iyzico_yearly_plan_reference_code": null,
+      "external_product_id": null,
+      "external_plan_id_monthly": null,
+      "external_plan_id_yearly": null,
+      "yearly_campaign_active": true
+    }
+  ]
+}

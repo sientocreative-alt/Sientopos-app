@@ -1,0 +1,472 @@
+[dotenv@17.2.3] injecting env (16) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+****************************************
+* SERVER STARTED ON PORT 5000      *
+****************************************
+[2026-02-17T21:54:09.051Z] Server is listening...
+Recurring Payment Job initialized (Daily 03:00)
+MongoDB Connection Error: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (C:\Users\MSI\Desktop\pos\server\node_modules\mongoose\lib\connection.js:1169:11)
+    at NativeConnection.openUri (C:\Users\MSI\Desktop\pos\server\node_modules\mongoose\lib\connection.js:1100:11) {
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  cause: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  }
+}
+[2026-02-17T21:54:42.891Z] GET /api/plans/admin/all
+[2026-02-17T21:54:43.363Z] GET /api/plans/admin/all
+[2026-02-17T21:54:51.611Z] GET /api/plans
+[2026-02-17T21:54:52.307Z] GET /api/plans
+[2026-02-17T21:54:52.311Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T21:54:52.877Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T21:54:52.915Z] POST /api/card/list
+[2026-02-17T21:54:53.269Z] POST /api/card/list
+[2026-02-17T21:55:13.213Z] GET /api/plans
+[2026-02-17T21:55:13.583Z] GET /api/plans
+[2026-02-17T21:55:13.591Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T21:55:13.960Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T21:55:13.968Z] POST /api/card/list
+[2026-02-17T21:55:14.194Z] POST /api/card/list
+[2026-02-17T21:55:16.800Z] POST /api/payment/iyzico/init
+--- PAYMENT DEBUG INIT ---
+PAYMENT_PROVIDER: iyzico
+Incoming Request Body: {
+  "amount": 9000,
+  "businessId": "71d385df-b120-4733-af74-5cfca1108e0a",
+  "planId": "27826bee-a3ef-4bfb-9d97-b433f299fe39",
+  "period": "yearly"
+}
+Generated Simple ID: TRX-1771365316805-852
+Iyzico Response Status: success
+--- PAYMENT DEBUG END ---
+[2026-02-17T21:55:49.389Z] POST /api/payment/callback/iyzico
+--- IYZICO CALLBACK DEBUG START ---
+Callback Headers: {
+  "host": "localhost:5000",
+  "connection": "keep-alive",
+  "content-length": "42",
+  "cache-control": "max-age=0",
+  "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Google Chrome\";v=\"144\"",
+  "sec-ch-ua-mobile": "?0",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "origin": "http://localhost:5173",
+  "content-type": "application/x-www-form-urlencoded",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "navigate",
+  "sec-fetch-user": "?1",
+  "sec-fetch-dest": "document",
+  "referer": "http://localhost:5173/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+  "cookie": "sb-fgpwrqutvybgyvrvmyzu-auth-token=base64-eyJhY2Nlc3NfdG9rZW4iOiJleUpoYkdjaU9pSkZVekkxTmlJc0ltdHBaQ0k2SWpNek5tSmtaRFk1TFdObU1URXROR05sWXkwNE1XUTFMVFUzWlRCa05ERmhaRFk0WlNJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcGMzTWlPaUpvZEhSd2N6b3ZMMlpuY0hkeWNYVjBkbmxpWjNsMmNuWnRlWHAxTG5OMWNHRmlZWE5sTG1OdkwyRjFkR2d2ZGpFaUxDSnpkV0lpT2lJNU5ESmlZV015T1MwM05tVm1MVFExWlRZdFlXRTROaTB3WXpkbU16bGtaVE5tT1RJaUxDSmhkV1FpT2lKaGRYUm9aVzUwYVdOaGRHVmtJaXdpWlhod0lqb3hOelk0T1RFMk5UZzRMQ0pwWVhRaU9qRTNOamc1TVRJNU9EZ3NJbVZ0WVdsc0lqb2lkRzlzWjJGallYQmhZMms1TVVCbmJXRnBiQzVqYjIwaUxDSndhRzl1WlNJNklpSXNJbUZ3Y0Y5dFpYUmhaR0YwWVNJNmV5SndjbTkyYVdSbGNpSTZJbVZ0WVdsc0lpd2ljSEp2ZG1sa1pYSnpJanBiSW1WdFlXbHNJbDE5TENKMWMyVnlYMjFsZEdGa1lYUmhJanA3SW1WdFlXbHNJam9pZEc5c1oyRmpZWEJoWTJrNU1VQm5iV0ZwYkM1amIyMGlMQ0psYldGcGJGOTJaWEpwWm1sbFpDSTZkSEoxWlN3aWNHaHZibVZmZG1WeWFXWnBaV1FpT21aaGJITmxMQ0p6ZFdJaU9pSTVOREppWVdNeU9TMDNObVZtTFRRMVpUWXRZV0U0Tmkwd1l6ZG1NemxrWlRObU9USWlmU3dpY205c1pTSTZJbUYxZEdobGJuUnBZMkYwWldRaUxDSmhZV3dpT2lKaFlXd3hJaXdpWVcxeUlqcGJleUp0WlhSb2IyUWlPaUpsYldGcGJDOXphV2R1ZFhBaUxDSjBhVzFsYzNSaGJYQWlPakUzTmpnM01EUTBNRFI5WFN3aWMyVnpjMmx2Ymw5cFpDSTZJbU13TWprNE5qbGtMV1ZqTURZdE5HRmhZeTA1T0Rsa0xUTTFaak0zTlRnM09XWTBNQ0lzSW1selgyRnViMjU1Ylc5MWN5STZabUZzYzJWOS5jTDBST3JVNWZ2Tjk5eXF5Q1lmWUNDM3ZzLTBqVUhIeXh4M0swRXFvZ3lfRmZxWXd6TDFkOVpVWXRYZTlsRFVnQ3RjV0JGTVFTUThfUjNNNTVZMEJnQSIsInRva2VuX3R5cGUiOiJiZWFyZXIiLCJleHBpcmVzX2luIjozNjAwLCJleHBpcmVzX2F0IjoxNzY4OTE2NTg4LCJyZWZyZXNoX3Rva2VuIjoiNTJua3ptY2E0bXBrIiwidXNlciI6eyJpZCI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiIsImF1ZCI6ImF1dGhlbnRpY2F0ZWQiLCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImVtYWlsIjoidG9sZ2FjYXBhY2k5MUBnbWFpbC5jb20iLCJlbWFpbF9jb25maXJtZWRfYXQiOiIyMDI2LTAxLTE4VDAyOjQ2OjQxLjQ0MzY0N1oiLCJwaG9uZSI6IiIsImNvbmZpcm1hdGlvbl9zZW50X2F0IjoiMjAyNi0wMS0xOFQwMjo0NjoyMC42Njg2NDZaIiwiY29uZmlybWVkX2F0IjoiMjAyNi0wMS0xOFQwMjo0Njo0MS40NDM2NDdaIiwibGFzdF9zaWduX2luX2F0IjoiMjAyNi0wMS0xOFQwMjo0Njo0NC4yOTY1MzZaIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiJ9LCJpZGVudGl0aWVzIjpbeyJpZGVudGl0eV9pZCI6ImMyNGMzY2EyLTQ2NzEtNDJhMy04ZGY3LTBhNDkzNDFkNTQ3ZiIsImlkIjoiOTQyYmFjMjktNzZlZi00NWU2LWFhODYtMGM3ZjM5ZGUzZjkyIiwidXNlcl9pZCI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiIsImlkZW50aXR5X2RhdGEiOnsiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiJ9LCJwcm92aWRlciI6ImVtYWlsIiwibGFzdF9zaWduX2luX2F0IjoiMjAyNi0wMS0xOFQwMjo0NjoyMC42NDgzNjdaIiwiY3JlYXRlZF9hdCI6IjIwMjYtMDEtMThUMDI6NDY6MjAuNjQ4NDMzWiIsInVwZGF0ZWRfYXQiOiIyMDI2LTAxLTE4VDAyOjQ2OjIwLjY0ODQzM1oiLCJlbWFpbCI6InRvbGdhY2FwYWNpOTFAZ21haWwuY29tIn1dLCJjcmVhdGVkX2F0IjoiMjAyNi0wMS0xOFQwMjo0NjoyMC42MjAyNDNaIiwidXBkYXRlZF9hdCI6IjIwMjYtMDEtMjBUMTI6NDM6MDguMjk1OTg2WiIsImlzX2Fub255bW91cyI6ZmFsc2V9fQ; sb-jsoneeamgpranczygpif-auth-token.0=base64-eyJhY2Nlc3NfdG9rZW4iOiJleUpoYkdjaU9pSkZVekkxTmlJc0ltdHBaQ0k2SWpNd09EUTJOek15TFdVNFpqY3RORGRpTXkxaFpESmpMV0ZpWXpjNU9UYzBPRGd5WVNJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcGMzTWlPaUpvZEhSd2N6b3ZMMnB6YjI1bFpXRnRaM0J5WVc1amVubG5jR2xtTG5OMWNHRmlZWE5sTG1OdkwyRjFkR2d2ZGpFaUxDSnpkV0lpT2lJME5qbGtNMll6T0MwM1pEUmpMVFF6WTJJdFlXRmpNQzFsT1dJd09UQmpOekF3TnpJaUxDSmhkV1FpT2lKaGRYUm9aVzUwYVdOaGRHVmtJaXdpWlhod0lqb3hOemN3TVRNNE1qUTRMQ0pwWVhRaU9qRTNOekF4TXpRMk5EZ3NJbVZ0WVdsc0lqb2lkRzlzWjJGallYQmhZMms1TVVCbmJXRnBiQzVqYjIwaUxDSndhRzl1WlNJNklpSXNJbUZ3Y0Y5dFpYUmhaR0YwWVNJNmV5SndjbTkyYVdSbGNpSTZJbVZ0WVdsc0lpd2ljSEp2ZG1sa1pYSnpJanBiSW1WdFlXbHNJbDE5TENKMWMyVnlYMjFsZEdGa1lYUmhJanA3SW1WdFlXbHNJam9pZEc5c1oyRmpZWEJoWTJrNU1VQm5iV0ZwYkM1amIyMGlMQ0psYldGcGJGOTJaWEpwWm1sbFpDSTZkSEoxWlN3aVptbHljM1JmYm1GdFpTSTZJblJ2YkdkaElpd2lablZzYkY5dVlXMWxJam9pVkc5c1oyRWd3NGRoY0dGanhMRWlMQ0pzWVhOMFgyNWhiV1VpT2lMRHAyRndZV1BFc1NJc0luQm9iMjVsWDNabGNtbG1hV1ZrSWpwbVlXeHpaU3dpYzNWaUlqb2lORFk1WkRObU16Z3ROMlEwWXkwME0yTmlMV0ZoWXpBdFpUbGlNRGt3WXpjd01EY3lJbjBzSW5KdmJHVWlPaUpoZFhSb1pXNTBhV05oZEdWa0lpd2lZV0ZzSWpvaVlXRnNNU0lzSW1GdGNpSTZXM3NpYldWMGFHOWtJam9pY0dGemMzZHZjbVFpTENKMGFXMWxjM1JoYlhBaU9qRTNOamcwT0RBNE9UbDlYU3dpYzJWemMybHZibDlwWkNJNklqbGpNVFF4Tm1RMkxUYzFZekV0TkdRMVppMWhabVJsTFRWa00yVTBNbUkzWW1Oak5DSXNJbWx6WDJGdWIyNTViVzkxY3lJNlptRnNjMlY5Lnh5cU43cm1USTRmSllTNUFRVWN1WTR5RUNVQ2t6eUFFQVlwWlBaTWFUVWlqMXo0R1hBajNfOHd3VS0yYUZMamZVMlJIUXN1T2FMN3RWUkNyOEpYd0tnIiwidG9rZW5fdHlwZSI6ImJlYXJlciIsImV4cGlyZXNfaW4iOjM2MDAsImV4cGlyZXNfYXQiOjE3NzAxMzgyNDgsInJlZnJlc2hfdG9rZW4iOiI3aHppbndzemF3d3AiLCJ1c2VyIjp7ImlkIjoiNDY5ZDNmMzgtN2Q0Yy00M2NiLWFhYzAtZTliMDkwYzcwMDcyIiwiYXVkIjoiYXV0aGVudGljYXRlZCIsInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX2NvbmZpcm1lZF9hdCI6IjIwMjYtMDEtMTFUMjI6NTM6NDcuNzA2MzE2WiIsInBob25lIjoiIiwiY29uZmlybWF0aW9uX3NlbnRfYXQiOiIyMDI2LTAxLTExVDIyOjUzOjAzLjIxMDMwNloiLCJjb25maXJtZWRfYXQiOiIyMDI2LTAxLTExVDIyOjUzOjQ3LjcwNjMxNloiLCJsYXN0X3NpZ25faW5fYXQiOiIyMDI2LTAxLTE3VDE5OjExOjQ2Ljg0MzcxMloiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6eyJlbWFpbCI6InRvbGdhY2FwYWNpOTFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcnN0X25hbWUiOiJ0b2xnYSIsImZ1bGxfbmFtZSI6IlRvbGdhIMOHYXBhY8SxIiwibGFzdF9uYW1lIjoiw6dhcGFjxLEiLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6IjQ2OWQzZjM4LTdkNGMtNDNjYi1hYWMwLWU5YjA5MGM3MDA3MiJ9LCJpZGVudGl0aWVzIjpbeyJpZGVudGl0eV9pZCI6ImQxNjM0ZmE2LWFlNmMtNGQ5NC05ODUwLTRmYjA4OTY5YjU1OSIsImlkIjoiNDY5ZDNmMzgtN2Q0Yy00M2NiLWFhYzAtZTliMDkwYzcwMDcyIiwidXNlcl9pZCI6IjQ2OWQzZjM4LTdkNGMtNDNjYi1hYWMwLWU5YjA5MGM3MDA3MiIsImlkZW50aXR5X2RhdGEiOnsiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJzdF9uYW1lIjoidG9sZ2EiLCJsYXN0X25hbWUiOiLDp2FwYWPEsSIsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwic3ViIjoiNDY5ZDNmMzgtN2Q0Yy00M2NiLWFhYzAtZTliMDkwYzcwMDcyIn0sInByb3ZpZGVyIjoiZW1haWwiLCJsYXN0X3NpZ25faW5fYXQiOiIyMDI2LTAxLTExVDIyOjUzOjAzLjE4MjY3MVoiLCJjcmVhdGVkX2F0IjoiMjAyNi0wMS0xMVQyMjo1MzowMy4xODI3MjVaIiwidXBkYXRlZF9hdCI6IjIwMjYtMDEtMTFUMjI6NTM6MDMuMTgyNzI1WiIsImVtYWlsIjoidG9sZ2FjYXBhY2k5MUBnbWFpbC5jb20ifV0sImNyZWF0ZWRfYXQiOiIyMDI2LTAxLTExVDIyOjUzOjAzLjEzNTgwNFoiLCJ1cGRhdGVkX2F0IjoiMjAyNi0wMi0wM1QxNjowNDowOC41NDc2M; sb-jsoneeamgpranczygpif-auth-token.1=jlaIiwiaXNfYW5vbnltb3VzIjpmYWxzZX19"
+}
+Callback Body: {
+  "token": "d1b50fcd-cec7-4328-9903-e49443541915"
+}
+Iyzico retrieve result: {
+  "status": "success",
+  "locale": "tr",
+  "systemTime": 1771365349844,
+  "price": 9000,
+  "paidPrice": 10099.88,
+  "installment": 6,
+  "paymentId": "28630448",
+  "fraudStatus": 1,
+  "merchantCommissionRate": 12.22088889,
+  "merchantCommissionRateAmount": 1099.88,
+  "iyziCommissionRateAmount": 1413.9832,
+  "iyziCommissionFee": 0.25,
+  "cardType": "CREDIT_CARD",
+  "cardAssociation": "VISA",
+  "cardFamily": "Maximum",
+  "binNumber": "454359",
+  "lastFourDigits": "0006",
+  "basketId": "TRX-1771365316805-852",
+  "currency": "TRY",
+  "itemTransactions": [
+    {
+      "itemId": "27826bee-a3ef-4bfb-9d97-b433f299fe39",
+      "paymentTransactionId": "30595748",
+      "transactionStatus": 2,
+      "price": 9000,
+      "paidPrice": 10099.8800001,
+      "merchantCommissionRate": 12.22088889,
+      "merchantCommissionRateAmount": 1099.8800001,
+      "iyziCommissionRateAmount": 1413.98320001,
+      "iyziCommissionFee": 0.25,
+      "blockageRate": 0,
+      "blockageRateAmountMerchant": 0,
+      "blockageRateAmountSubMerchant": 0,
+      "blockageResolvedDate": "2026-02-26 00:00:00",
+      "subMerchantPrice": 0,
+      "subMerchantPayoutRate": 0,
+      "subMerchantPayoutAmount": 0,
+      "merchantPayoutAmount": 8685.64680009,
+      "convertedPayout": {
+        "paidPrice": 10099.8800001,
+        "iyziCommissionRateAmount": 1413.98320001,
+        "iyziCommissionFee": 0.25,
+        "blockageRateAmountMerchant": 0,
+        "blockageRateAmountSubMerchant": 0,
+        "subMerchantPayoutAmount": 0,
+        "merchantPayoutAmount": 8685.64680009,
+        "iyziConversionRate": 0,
+        "iyziConversionRateAmount": 0,
+        "currency": "TRY"
+      }
+    }
+  ],
+  "authCode": "766015",
+  "phase": "AUTH",
+  "hostReference": "mock00004iyzihostrfn",
+  "signature": "482288219cb9305eaea200dba4855a597d23733a0c8229886e5a1ad2dd524699",
+  "token": "d1b50fcd-cec7-4328-9903-e49443541915",
+  "callbackUrl": "http://localhost:5000/api/payment/callback/iyzico",
+  "paymentStatus": "SUCCESS",
+  "maturityChargeAmount": 1099.88
+}
+Looking up transaction for ID: TRX-1771365316805-852
+Transaction Found: {
+  businessId: '71d385df-b120-4733-af74-5cfca1108e0a',
+  planId: '27826bee-a3ef-4bfb-9d97-b433f299fe39',
+  period: 'yearly'
+}
+CAMPAIGN APPLIED: Adding 15 months (12+3)
+Calculating dates: {
+  baseDate: '2026-03-17T00:00:00.000Z',
+  endDate: '2027-06-17T00:00:00.000Z'
+}
+Calculating Commission: Reseller=6e9df80e-5100-42b6-abc8-ef7b151772cb, Rate=15%, Amount=1514.9819999999997
+Commission recorded successfully.
+[2026-02-17T21:55:54.312Z] GET /api/plans
+[2026-02-17T21:55:58.297Z] GET /api/plans
+[2026-02-17T21:55:58.302Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T21:55:58.584Z] GET /api/plans
+[2026-02-17T21:55:58.745Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T21:55:58.757Z] POST /api/card/list
+[2026-02-17T21:55:58.811Z] GET /api/plans
+[2026-02-17T21:55:58.948Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T21:55:58.954Z] POST /api/card/list
+[2026-02-17T21:55:59.120Z] GET /api/plans
+[2026-02-17T21:55:59.158Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T21:55:59.161Z] POST /api/card/list
+[2026-02-17T21:55:59.605Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T21:55:59.611Z] POST /api/card/list
+[2026-02-17T21:55:59.886Z] POST /api/card/list
+[2026-02-17T21:56:16.873Z] GET /api/plans/admin/all
+[2026-02-17T21:56:17.362Z] GET /api/plans/admin/all
+[2026-02-17T21:57:11.564Z] GET /api/plans
+[2026-02-17T21:57:12.083Z] GET /api/plans
+[2026-02-17T21:57:12.089Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T21:57:12.479Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T21:57:12.499Z] POST /api/card/list
+[2026-02-17T21:57:12.693Z] POST /api/card/list
+[2026-02-17T21:57:16.519Z] GET /api/plans/admin/all
+[2026-02-17T21:57:16.747Z] GET /api/plans/admin/all
+[2026-02-17T21:57:36.855Z] GET /api/plans
+[2026-02-17T21:57:37.237Z] GET /api/plans
+[2026-02-17T21:57:37.257Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T21:57:39.081Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T21:57:39.089Z] POST /api/card/list
+[2026-02-17T21:57:39.694Z] POST /api/card/list
+[2026-02-17T21:59:49.077Z] GET /api/plans
+[2026-02-17T21:59:49.569Z] GET /api/plans
+[2026-02-17T21:59:49.573Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T21:59:49.958Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T21:59:49.964Z] POST /api/card/list
+[2026-02-17T21:59:50.183Z] POST /api/card/list
+[2026-02-17T22:01:05.239Z] GET /api/plans/admin/all
+[2026-02-17T22:01:05.634Z] GET /api/plans/admin/all
+[2026-02-17T22:13:46.110Z] GET /api/plans
+[2026-02-17T22:13:46.525Z] GET /api/plans
+[2026-02-17T22:13:46.541Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T22:13:46.882Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T22:13:46.888Z] POST /api/card/list
+[2026-02-17T22:13:47.212Z] POST /api/card/list
+[2026-02-17T22:53:15.760Z] GET /api/plans
+[2026-02-17T22:53:16.176Z] GET /api/plans
+[2026-02-17T22:53:16.179Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T22:53:16.519Z] GET /api/subscription/71d385df-b120-4733-af74-5cfca1108e0a
+[2026-02-17T22:53:16.522Z] POST /api/card/list
+[2026-02-17T22:53:16.738Z] POST /api/card/list
+[2026-02-17T22:53:41.671Z] GET /api/plans
+[2026-02-17T22:53:42.010Z] GET /api/plans
+[2026-02-17T22:53:42.017Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T22:53:42.420Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T22:53:42.424Z] POST /api/card/list
+[2026-02-17T22:53:42.622Z] POST /api/card/list
+[2026-02-17T22:53:48.431Z] GET /api/plans
+[2026-02-17T22:53:48.782Z] GET /api/plans
+[2026-02-17T22:53:48.784Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T22:53:49.110Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T22:53:49.120Z] POST /api/card/list
+[2026-02-17T22:53:49.326Z] POST /api/card/list
+[2026-02-17T22:53:52.284Z] POST /api/payment/iyzico/init
+--- PAYMENT DEBUG INIT ---
+PAYMENT_PROVIDER: iyzico
+Incoming Request Body: {
+  "amount": 9000,
+  "businessId": "19fb77b9-ecc2-4f66-a768-93e16955ac5b",
+  "planId": "27826bee-a3ef-4bfb-9d97-b433f299fe39",
+  "period": "yearly"
+}
+Generated Simple ID: TRX-1771368832289-378
+Iyzico Response Status: success
+--- PAYMENT DEBUG END ---
+[2026-02-17T22:54:11.271Z] POST /api/payment/callback/iyzico
+--- IYZICO CALLBACK DEBUG START ---
+Callback Headers: {
+  "host": "localhost:5000",
+  "connection": "keep-alive",
+  "content-length": "42",
+  "cache-control": "max-age=0",
+  "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Google Chrome\";v=\"144\"",
+  "sec-ch-ua-mobile": "?0",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "origin": "http://localhost:5173",
+  "content-type": "application/x-www-form-urlencoded",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "navigate",
+  "sec-fetch-user": "?1",
+  "sec-fetch-dest": "document",
+  "referer": "http://localhost:5173/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+  "cookie": "sb-fgpwrqutvybgyvrvmyzu-auth-token=base64-eyJhY2Nlc3NfdG9rZW4iOiJleUpoYkdjaU9pSkZVekkxTmlJc0ltdHBaQ0k2SWpNek5tSmtaRFk1TFdObU1URXROR05sWXkwNE1XUTFMVFUzWlRCa05ERmhaRFk0WlNJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcGMzTWlPaUpvZEhSd2N6b3ZMMlpuY0hkeWNYVjBkbmxpWjNsMmNuWnRlWHAxTG5OMWNHRmlZWE5sTG1OdkwyRjFkR2d2ZGpFaUxDSnpkV0lpT2lJNU5ESmlZV015T1MwM05tVm1MVFExWlRZdFlXRTROaTB3WXpkbU16bGtaVE5tT1RJaUxDSmhkV1FpT2lKaGRYUm9aVzUwYVdOaGRHVmtJaXdpWlhod0lqb3hOelk0T1RFMk5UZzRMQ0pwWVhRaU9qRTNOamc1TVRJNU9EZ3NJbVZ0WVdsc0lqb2lkRzlzWjJGallYQmhZMms1TVVCbmJXRnBiQzVqYjIwaUxDSndhRzl1WlNJNklpSXNJbUZ3Y0Y5dFpYUmhaR0YwWVNJNmV5SndjbTkyYVdSbGNpSTZJbVZ0WVdsc0lpd2ljSEp2ZG1sa1pYSnpJanBiSW1WdFlXbHNJbDE5TENKMWMyVnlYMjFsZEdGa1lYUmhJanA3SW1WdFlXbHNJam9pZEc5c1oyRmpZWEJoWTJrNU1VQm5iV0ZwYkM1amIyMGlMQ0psYldGcGJGOTJaWEpwWm1sbFpDSTZkSEoxWlN3aWNHaHZibVZmZG1WeWFXWnBaV1FpT21aaGJITmxMQ0p6ZFdJaU9pSTVOREppWVdNeU9TMDNObVZtTFRRMVpUWXRZV0U0Tmkwd1l6ZG1NemxrWlRObU9USWlmU3dpY205c1pTSTZJbUYxZEdobGJuUnBZMkYwWldRaUxDSmhZV3dpT2lKaFlXd3hJaXdpWVcxeUlqcGJleUp0WlhSb2IyUWlPaUpsYldGcGJDOXphV2R1ZFhBaUxDSjBhVzFsYzNSaGJYQWlPakUzTmpnM01EUTBNRFI5WFN3aWMyVnpjMmx2Ymw5cFpDSTZJbU13TWprNE5qbGtMV1ZqTURZdE5HRmhZeTA1T0Rsa0xUTTFaak0zTlRnM09XWTBNQ0lzSW1selgyRnViMjU1Ylc5MWN5STZabUZzYzJWOS5jTDBST3JVNWZ2Tjk5eXF5Q1lmWUNDM3ZzLTBqVUhIeXh4M0swRXFvZ3lfRmZxWXd6TDFkOVpVWXRYZTlsRFVnQ3RjV0JGTVFTUThfUjNNNTVZMEJnQSIsInRva2VuX3R5cGUiOiJiZWFyZXIiLCJleHBpcmVzX2luIjozNjAwLCJleHBpcmVzX2F0IjoxNzY4OTE2NTg4LCJyZWZyZXNoX3Rva2VuIjoiNTJua3ptY2E0bXBrIiwidXNlciI6eyJpZCI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiIsImF1ZCI6ImF1dGhlbnRpY2F0ZWQiLCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImVtYWlsIjoidG9sZ2FjYXBhY2k5MUBnbWFpbC5jb20iLCJlbWFpbF9jb25maXJtZWRfYXQiOiIyMDI2LTAxLTE4VDAyOjQ2OjQxLjQ0MzY0N1oiLCJwaG9uZSI6IiIsImNvbmZpcm1hdGlvbl9zZW50X2F0IjoiMjAyNi0wMS0xOFQwMjo0NjoyMC42Njg2NDZaIiwiY29uZmlybWVkX2F0IjoiMjAyNi0wMS0xOFQwMjo0Njo0MS40NDM2NDdaIiwibGFzdF9zaWduX2luX2F0IjoiMjAyNi0wMS0xOFQwMjo0Njo0NC4yOTY1MzZaIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiJ9LCJpZGVudGl0aWVzIjpbeyJpZGVudGl0eV9pZCI6ImMyNGMzY2EyLTQ2NzEtNDJhMy04ZGY3LTBhNDkzNDFkNTQ3ZiIsImlkIjoiOTQyYmFjMjktNzZlZi00NWU2LWFhODYtMGM3ZjM5ZGUzZjkyIiwidXNlcl9pZCI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiIsImlkZW50aXR5X2RhdGEiOnsiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6Ijk0MmJhYzI5LTc2ZWYtNDVlNi1hYTg2LTBjN2YzOWRlM2Y5MiJ9LCJwcm92aWRlciI6ImVtYWlsIiwibGFzdF9zaWduX2luX2F0IjoiMjAyNi0wMS0xOFQwMjo0NjoyMC42NDgzNjdaIiwiY3JlYXRlZF9hdCI6IjIwMjYtMDEtMThUMDI6NDY6MjAuNjQ4NDMzWiIsInVwZGF0ZWRfYXQiOiIyMDI2LTAxLTE4VDAyOjQ2OjIwLjY0ODQzM1oiLCJlbWFpbCI6InRvbGdhY2FwYWNpOTFAZ21haWwuY29tIn1dLCJjcmVhdGVkX2F0IjoiMjAyNi0wMS0xOFQwMjo0NjoyMC42MjAyNDNaIiwidXBkYXRlZF9hdCI6IjIwMjYtMDEtMjBUMTI6NDM6MDguMjk1OTg2WiIsImlzX2Fub255bW91cyI6ZmFsc2V9fQ; sb-jsoneeamgpranczygpif-auth-token.0=base64-eyJhY2Nlc3NfdG9rZW4iOiJleUpoYkdjaU9pSkZVekkxTmlJc0ltdHBaQ0k2SWpNd09EUTJOek15TFdVNFpqY3RORGRpTXkxaFpESmpMV0ZpWXpjNU9UYzBPRGd5WVNJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcGMzTWlPaUpvZEhSd2N6b3ZMMnB6YjI1bFpXRnRaM0J5WVc1amVubG5jR2xtTG5OMWNHRmlZWE5sTG1OdkwyRjFkR2d2ZGpFaUxDSnpkV0lpT2lJME5qbGtNMll6T0MwM1pEUmpMVFF6WTJJdFlXRmpNQzFsT1dJd09UQmpOekF3TnpJaUxDSmhkV1FpT2lKaGRYUm9aVzUwYVdOaGRHVmtJaXdpWlhod0lqb3hOemN3TVRNNE1qUTRMQ0pwWVhRaU9qRTNOekF4TXpRMk5EZ3NJbVZ0WVdsc0lqb2lkRzlzWjJGallYQmhZMms1TVVCbmJXRnBiQzVqYjIwaUxDSndhRzl1WlNJNklpSXNJbUZ3Y0Y5dFpYUmhaR0YwWVNJNmV5SndjbTkyYVdSbGNpSTZJbVZ0WVdsc0lpd2ljSEp2ZG1sa1pYSnpJanBiSW1WdFlXbHNJbDE5TENKMWMyVnlYMjFsZEdGa1lYUmhJanA3SW1WdFlXbHNJam9pZEc5c1oyRmpZWEJoWTJrNU1VQm5iV0ZwYkM1amIyMGlMQ0psYldGcGJGOTJaWEpwWm1sbFpDSTZkSEoxWlN3aVptbHljM1JmYm1GdFpTSTZJblJ2YkdkaElpd2lablZzYkY5dVlXMWxJam9pVkc5c1oyRWd3NGRoY0dGanhMRWlMQ0pzWVhOMFgyNWhiV1VpT2lMRHAyRndZV1BFc1NJc0luQm9iMjVsWDNabGNtbG1hV1ZrSWpwbVlXeHpaU3dpYzNWaUlqb2lORFk1WkRObU16Z3ROMlEwWXkwME0yTmlMV0ZoWXpBdFpUbGlNRGt3WXpjd01EY3lJbjBzSW5KdmJHVWlPaUpoZFhSb1pXNTBhV05oZEdWa0lpd2lZV0ZzSWpvaVlXRnNNU0lzSW1GdGNpSTZXM3NpYldWMGFHOWtJam9pY0dGemMzZHZjbVFpTENKMGFXMWxjM1JoYlhBaU9qRTNOamcwT0RBNE9UbDlYU3dpYzJWemMybHZibDlwWkNJNklqbGpNVFF4Tm1RMkxUYzFZekV0TkdRMVppMWhabVJsTFRWa00yVTBNbUkzWW1Oak5DSXNJbWx6WDJGdWIyNTViVzkxY3lJNlptRnNjMlY5Lnh5cU43cm1USTRmSllTNUFRVWN1WTR5RUNVQ2t6eUFFQVlwWlBaTWFUVWlqMXo0R1hBajNfOHd3VS0yYUZMamZVMlJIUXN1T2FMN3RWUkNyOEpYd0tnIiwidG9rZW5fdHlwZSI6ImJlYXJlciIsImV4cGlyZXNfaW4iOjM2MDAsImV4cGlyZXNfYXQiOjE3NzAxMzgyNDgsInJlZnJlc2hfdG9rZW4iOiI3aHppbndzemF3d3AiLCJ1c2VyIjp7ImlkIjoiNDY5ZDNmMzgtN2Q0Yy00M2NiLWFhYzAtZTliMDkwYzcwMDcyIiwiYXVkIjoiYXV0aGVudGljYXRlZCIsInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX2NvbmZpcm1lZF9hdCI6IjIwMjYtMDEtMTFUMjI6NTM6NDcuNzA2MzE2WiIsInBob25lIjoiIiwiY29uZmlybWF0aW9uX3NlbnRfYXQiOiIyMDI2LTAxLTExVDIyOjUzOjAzLjIxMDMwNloiLCJjb25maXJtZWRfYXQiOiIyMDI2LTAxLTExVDIyOjUzOjQ3LjcwNjMxNloiLCJsYXN0X3NpZ25faW5fYXQiOiIyMDI2LTAxLTE3VDE5OjExOjQ2Ljg0MzcxMloiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6eyJlbWFpbCI6InRvbGdhY2FwYWNpOTFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcnN0X25hbWUiOiJ0b2xnYSIsImZ1bGxfbmFtZSI6IlRvbGdhIMOHYXBhY8SxIiwibGFzdF9uYW1lIjoiw6dhcGFjxLEiLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6IjQ2OWQzZjM4LTdkNGMtNDNjYi1hYWMwLWU5YjA5MGM3MDA3MiJ9LCJpZGVudGl0aWVzIjpbeyJpZGVudGl0eV9pZCI6ImQxNjM0ZmE2LWFlNmMtNGQ5NC05ODUwLTRmYjA4OTY5YjU1OSIsImlkIjoiNDY5ZDNmMzgtN2Q0Yy00M2NiLWFhYzAtZTliMDkwYzcwMDcyIiwidXNlcl9pZCI6IjQ2OWQzZjM4LTdkNGMtNDNjYi1hYWMwLWU5YjA5MGM3MDA3MiIsImlkZW50aXR5X2RhdGEiOnsiZW1haWwiOiJ0b2xnYWNhcGFjaTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJzdF9uYW1lIjoidG9sZ2EiLCJsYXN0X25hbWUiOiLDp2FwYWPEsSIsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwic3ViIjoiNDY5ZDNmMzgtN2Q0Yy00M2NiLWFhYzAtZTliMDkwYzcwMDcyIn0sInByb3ZpZGVyIjoiZW1haWwiLCJsYXN0X3NpZ25faW5fYXQiOiIyMDI2LTAxLTExVDIyOjUzOjAzLjE4MjY3MVoiLCJjcmVhdGVkX2F0IjoiMjAyNi0wMS0xMVQyMjo1MzowMy4xODI3MjVaIiwidXBkYXRlZF9hdCI6IjIwMjYtMDEtMTFUMjI6NTM6MDMuMTgyNzI1WiIsImVtYWlsIjoidG9sZ2FjYXBhY2k5MUBnbWFpbC5jb20ifV0sImNyZWF0ZWRfYXQiOiIyMDI2LTAxLTExVDIyOjUzOjAzLjEzNTgwNFoiLCJ1cGRhdGVkX2F0IjoiMjAyNi0wMi0wM1QxNjowNDowOC41NDc2M; sb-jsoneeamgpranczygpif-auth-token.1=jlaIiwiaXNfYW5vbnltb3VzIjpmYWxzZX19"
+}
+Callback Body: {
+  "token": "a1e47807-0bf3-4295-8e18-a36c129d2638"
+}
+Iyzico retrieve result: {
+  "status": "success",
+  "locale": "tr",
+  "systemTime": 1771368851414,
+  "price": 9000,
+  "paidPrice": 11627.71,
+  "installment": 12,
+  "paymentId": "28630562",
+  "fraudStatus": 1,
+  "merchantCommissionRate": 29.19677778,
+  "merchantCommissionRateAmount": 2627.71,
+  "iyziCommissionRateAmount": 2941.81063,
+  "iyziCommissionFee": 0.25,
+  "cardType": "CREDIT_CARD",
+  "cardAssociation": "TROY",
+  "cardFamily": "World",
+  "binNumber": "650170",
+  "lastFourDigits": "7183",
+  "basketId": "TRX-1771368832289-378",
+  "currency": "TRY",
+  "itemTransactions": [
+    {
+      "itemId": "27826bee-a3ef-4bfb-9d97-b433f299fe39",
+      "paymentTransactionId": "30595850",
+      "transactionStatus": 2,
+      "price": 9000,
+      "paidPrice": 11627.7100002,
+      "merchantCommissionRate": 29.19677778,
+      "merchantCommissionRateAmount": 2627.7100002,
+      "iyziCommissionRateAmount": 2941.81063005,
+      "iyziCommissionFee": 0.25,
+      "blockageRate": 0,
+      "blockageRateAmountMerchant": 0,
+      "blockageRateAmountSubMerchant": 0,
+      "blockageResolvedDate": "2026-02-26 00:00:00",
+      "subMerchantPrice": 0,
+      "subMerchantPayoutRate": 0,
+      "subMerchantPayoutAmount": 0,
+      "merchantPayoutAmount": 8685.64937015,
+      "convertedPayout": {
+        "paidPrice": 11627.7100002,
+        "iyziCommissionRateAmount": 2941.81063005,
+        "iyziCommissionFee": 0.25,
+        "blockageRateAmountMerchant": 0,
+        "blockageRateAmountSubMerchant": 0,
+        "subMerchantPayoutAmount": 0,
+        "merchantPayoutAmount": 8685.64937015,
+        "iyziConversionRate": 0,
+        "iyziConversionRateAmount": 0,
+        "currency": "TRY"
+      }
+    }
+  ],
+  "authCode": "223593",
+  "phase": "AUTH",
+  "hostReference": "mock00052iyzihostrfn",
+  "signature": "3c6cf435d913d495bfe3ca9edb91ef695627587ed6074967692da8a3fbed5d4a",
+  "token": "a1e47807-0bf3-4295-8e18-a36c129d2638",
+  "callbackUrl": "http://localhost:5000/api/payment/callback/iyzico",
+  "paymentStatus": "SUCCESS",
+  "maturityChargeAmount": 2627.71
+}
+Looking up transaction for ID: TRX-1771368832289-378
+Transaction Found: {
+  businessId: '19fb77b9-ecc2-4f66-a768-93e16955ac5b',
+  planId: '27826bee-a3ef-4bfb-9d97-b433f299fe39',
+  period: 'yearly'
+}
+CAMPAIGN APPLIED: Adding 15 months (12+3)
+Calculating dates: {
+  baseDate: '2026-02-17T22:54:12.318Z',
+  endDate: '2027-05-17T22:54:12.318Z'
+}
+[2026-02-17T22:54:14.704Z] GET /api/plans
+[2026-02-17T22:54:16.440Z] GET /api/plans
+[2026-02-17T22:54:16.448Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T22:54:16.652Z] GET /api/plans
+[2026-02-17T22:54:16.687Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T22:54:16.689Z] POST /api/card/list
+[2026-02-17T22:54:16.879Z] GET /api/plans
+[2026-02-17T22:54:16.898Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T22:54:16.904Z] POST /api/card/list
+[2026-02-17T22:54:17.088Z] GET /api/plans
+[2026-02-17T22:54:17.136Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T22:54:17.138Z] POST /api/card/list
+[2026-02-17T22:54:17.370Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T22:54:17.375Z] POST /api/card/list
+[2026-02-17T22:54:17.605Z] POST /api/card/list
+[2026-02-17T23:09:53.395Z] GET /api/plans
+[2026-02-17T23:09:53.913Z] GET /api/plans
+[2026-02-17T23:09:53.917Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:09:54.368Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:09:54.369Z] POST /api/card/list
+[2026-02-17T23:09:54.588Z] POST /api/card/list
+[2026-02-17T23:10:00.655Z] GET /api/plans
+[2026-02-17T23:10:01.094Z] GET /api/plans
+[2026-02-17T23:10:01.100Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:10:01.626Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:10:01.638Z] POST /api/card/list
+[2026-02-17T23:10:01.845Z] POST /api/card/list
+[2026-02-17T23:29:01.435Z] GET /api/plans
+[2026-02-17T23:29:02.135Z] GET /api/plans
+[2026-02-17T23:29:02.154Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:29:02.893Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:29:02.897Z] POST /api/card/list
+[2026-02-17T23:29:03.100Z] POST /api/card/list
+[2026-02-17T23:29:13.063Z] GET /api/plans
+[2026-02-17T23:29:13.480Z] GET /api/plans
+[2026-02-17T23:29:13.486Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:29:13.911Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:29:13.918Z] POST /api/card/list
+[2026-02-17T23:29:14.118Z] POST /api/card/list
+[2026-02-17T23:39:35.488Z] GET /api/plans
+[2026-02-17T23:39:35.948Z] GET /api/plans
+[2026-02-17T23:39:35.951Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:39:36.317Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:39:36.323Z] POST /api/card/list
+[2026-02-17T23:39:36.540Z] POST /api/card/list
+[2026-02-17T23:39:57.257Z] GET /api/plans
+[2026-02-17T23:39:57.549Z] GET /api/plans
+[2026-02-17T23:39:57.550Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:39:57.870Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:39:57.872Z] POST /api/card/list
+[2026-02-17T23:39:58.112Z] POST /api/card/list
+[2026-02-17T23:40:13.285Z] GET /api/plans
+[2026-02-17T23:40:13.645Z] GET /api/plans
+[2026-02-17T23:40:13.647Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:40:13.945Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:40:13.955Z] POST /api/card/list
+[2026-02-17T23:40:14.145Z] POST /api/card/list
+[2026-02-17T23:43:02.610Z] GET /api/plans
+[2026-02-17T23:43:03.019Z] GET /api/plans
+[2026-02-17T23:43:03.021Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:43:03.429Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:43:03.440Z] POST /api/card/list
+[2026-02-17T23:43:03.670Z] POST /api/card/list
+[2026-02-17T23:48:13.325Z] GET /api/plans
+[2026-02-17T23:48:14.003Z] GET /api/plans
+[2026-02-17T23:48:14.010Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:48:14.379Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:48:14.387Z] POST /api/card/list
+[2026-02-17T23:48:14.608Z] POST /api/card/list
+[2026-02-17T23:51:43.844Z] GET /api/plans
+[2026-02-17T23:51:44.262Z] GET /api/plans
+[2026-02-17T23:51:44.265Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:51:44.613Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:51:44.615Z] POST /api/card/list
+[2026-02-17T23:51:44.846Z] POST /api/card/list
+[2026-02-17T23:53:37.329Z] GET /api/plans
+[2026-02-17T23:53:37.996Z] GET /api/plans
+[2026-02-17T23:53:37.998Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:53:38.475Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:53:38.477Z] GET /api/plans
+[2026-02-17T23:53:38.480Z] POST /api/card/list
+[2026-02-17T23:53:38.705Z] GET /api/plans
+[2026-02-17T23:53:38.711Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:53:38.714Z] POST /api/card/list
+[2026-02-17T23:53:38.961Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:53:38.966Z] POST /api/card/list
+[2026-02-17T23:53:39.190Z] POST /api/card/list
+[2026-02-17T23:56:36.160Z] GET /api/plans
+[2026-02-17T23:56:36.548Z] GET /api/plans
+[2026-02-17T23:56:36.550Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:56:36.913Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:56:36.917Z] POST /api/card/list
+[2026-02-17T23:56:37.136Z] POST /api/card/list
+[2026-02-17T23:56:52.057Z] GET /api/plans
+[2026-02-17T23:56:52.775Z] GET /api/plans
+[2026-02-17T23:56:52.782Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:56:53.090Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-17T23:56:53.097Z] POST /api/card/list
+[2026-02-17T23:56:53.336Z] POST /api/card/list
+Running daily recurring payment check...
+[2026-02-18T00:01:29.378Z] GET /api/plans
+[2026-02-18T00:01:29.742Z] GET /api/plans
+[2026-02-18T00:01:29.749Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-18T00:01:30.066Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-18T00:01:30.073Z] POST /api/card/list
+[2026-02-18T00:01:30.304Z] POST /api/card/list
+[2026-02-18T00:28:03.794Z] GET /api/payment/config-status/all
+[2026-02-18T00:28:04.839Z] GET /api/payment/config-status/all
+[2026-02-18T00:28:05.703Z] GET /api/plans/admin/all
+[2026-02-18T00:28:05.953Z] GET /api/plans/admin/all
+[2026-02-18T00:28:09.778Z] PUT /api/plans/admin/27826bee-a3ef-4bfb-9d97-b433f299fe39
+[2026-02-18T00:28:10.074Z] GET /api/plans/admin/all
+[2026-02-18T00:28:13.212Z] GET /api/plans
+[2026-02-18T00:28:13.455Z] GET /api/plans
+[2026-02-18T00:28:13.461Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-18T00:28:13.797Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-18T00:28:13.803Z] POST /api/card/list
+[2026-02-18T00:28:14.027Z] POST /api/card/list
+[2026-02-18T00:28:20.303Z] GET /api/plans/admin/all
+[2026-02-18T00:28:20.655Z] GET /api/plans/admin/all
+[2026-02-18T00:32:11.532Z] GET /api/plans
+[2026-02-18T00:32:11.861Z] GET /api/plans
+[2026-02-18T00:32:11.864Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-18T00:32:12.446Z] GET /api/subscription/19fb77b9-ecc2-4f66-a768-93e16955ac5b
+[2026-02-18T00:32:12.454Z] POST /api/card/list
+[2026-02-18T00:32:12.683Z] POST /api/card/list
+[2026-02-18T00:45:35.540Z] GET /api/plans/admin/all
+[2026-02-18T00:45:36.336Z] GET /api/plans/admin/all

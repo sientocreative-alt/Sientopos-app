@@ -1,0 +1,44 @@
+{
+    "name": "sientopos-desktop",
+    "version": "1.0.0",
+    "description": "SientoPOS Desktop Application",
+    "main": "main.js",
+    "author": "SientoPOS",
+    "license": "ISC",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development electron .",
+        "build:client": "cd client && npm run build",
+        "dist": "npm run build:client && cross-env NODE_ENV=production electron-builder"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "electron": "^34.5.8",
+        "electron-builder": "^25.1.8"
+    },
+    "build": {
+        "appId": "com.sientopos.app",
+        "productName": "SientoPOS",
+        "copyright": "Copyright © 2026 SientoPOS",
+        "directories": {
+            "output": "dist"
+        },
+        "win": {
+            "target": [
+                "nsis"
+            ],
+            "icon": "client/public/favicon.ico"
+        },
+        "nsis": {
+            "oneClick": false,
+            "allowToChangeInstallationDirectory": true,
+            "createDesktopShortcut": true,
+            "createStartMenuShortcut": true,
+            "shortcutName": "SientoPOS"
+        },
+        "files": [
+            "main.js",
+            "preload.js",
+            "client/dist/**/*"
+        ]
+    }
+}

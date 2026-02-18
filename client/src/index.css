@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Roboto', 'system-ui', 'sans-serif';
+  --color-primary: #f97316;
+  /* Orange-500 */
+  --color-primary-dark: #ea580c;
+  /* Orange-600 */
+  --color-dark-bg: #1a1a1a;
+  --color-dark-card: #262626;
+}
+
+:root {
+  font-family: 'Roboto', system-ui, sans-serif;
+}
+
+/* Enforce Roboto globally on all elements */
+* {
+  font-family: 'Roboto', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-dark-bg);
+  color: #fff;
+  font-family: 'Roboto', system-ui, sans-serif;
+}
+
+/* Ensure form elements inherit the font */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
