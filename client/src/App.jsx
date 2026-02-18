@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { Toaster } from 'react-hot-toast';
 import Login from './pages/Login';
@@ -122,6 +122,8 @@ import PaymentTypeGraph from './pages/reports/PaymentTypeGraph';
 import ExpenseGraph from './pages/reports/ExpenseGraph';
 import StockConsumption from './pages/reports/StockConsumption';
 import StockConsumptionDetail from './pages/reports/StockConsumptionDetail';
+import RearScreenSlider from './pages/RearScreenSlider';
+import NewSliderImage from './pages/NewSliderImage';
 
 import AdminLayout from './pages/admin/AdminLayout';
 import AdminDashboard from './pages/admin/AdminDashboard';
@@ -400,6 +402,8 @@ function App() {
                         <Route path="destek/taleplerim" element={<MyTickets />} />
                         <Route path="destek/taleplerim/:id" element={<BusinessTicketDetail />} />
                         <Route path="destek/sss" element={<FAQ />} />
+                        <Route path="menuboard" element={<RearScreenSlider />} />
+                        <Route path="menuboard/yeni" element={<NewSliderImage />} />
                         <Route path="siento-faturalari" element={<SientoFaturalari />} />
                       </Routes>
                     </DashboardLayout>

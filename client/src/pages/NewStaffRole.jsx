@@ -104,7 +104,7 @@ const NewStaffRole = () => {
         ],
         'Abonelik': [
             'Abonelik',
-            'Ürün Puanları',
+            'MenuBoard',
             'Personel İndirimleri',
             'Destek'
         ],

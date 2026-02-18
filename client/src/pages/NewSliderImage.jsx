@@ -122,14 +122,14 @@ const NewSliderImage = () => {
                     <span>•</span>
                     <span>POS Ayarları</span>
                     <span>•</span>
-                    <span>Arka Ekran Slider</span>
+                    <span>MenuBoard</span>
                     <span>•</span>
                     <span>Yeni</span>
                 </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 max-w-5xl mx-auto">
-                <h1 className="text-xl font-bold text-gray-800 mb-8">Arka Ekran Slider Ekle</h1>
+                <h1 className="text-xl font-bold text-gray-800 mb-8">MenuBoard Görseli Ekle</h1>
 
                 {/* Photo Input */}
                 <div className="mb-6">
@@ -179,7 +179,7 @@ const NewSliderImage = () => {
                 {/* Confirm Button */}
                 <div className="flex justify-end gap-3 mt-8 pt-6 border-t border-gray-100">
                     <button
-                        onClick={() => navigate('/isletme/ekran-slider')}
+                        onClick={() => navigate('/isletme/menuboard')}
                         className="px-6 py-2 bg-gray-100 text-gray-700 rounded-lg font-medium hover:bg-gray-200 transition-colors"
                     >
                         Pano'ya Dön

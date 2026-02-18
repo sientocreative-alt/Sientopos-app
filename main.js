@@ -21,10 +21,11 @@ function createWindow() {
     // Remove default menu
     win.setMenu(null);
 
-    win.loadURL(startUrl);
-
     if (isDev) {
+        win.loadURL(startUrl);
         win.webContents.openDevTools();
+    } else {
+        win.loadFile(path.join(__dirname, 'client/dist/index.html'));
     }
 }
 
