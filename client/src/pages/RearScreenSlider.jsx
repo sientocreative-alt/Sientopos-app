@@ -54,19 +54,19 @@ const RearScreenSlider = () => {
         <div className="p-6">
             <div className="flex justify-between items-center mb-6">
                 <div className="flex items-center gap-2 text-sm text-gray-500">
-                    <span className="font-bold text-gray-900 text-lg">Arka Ekran Slider</span>
+                    <span className="font-bold text-gray-900 text-lg">MenuBoard</span>
                     <span>Pano</span>
                     <span>•</span>
                     <span>POS Ayarları</span>
                     <span>•</span>
-                    <span>Arka Ekran Slider</span>
+                    <span>MenuBoard</span>
                 </div>
                 <div className="flex gap-3">
                     <button
                         className="px-4 py-2 bg-blue-100 text-blue-600 rounded-lg font-medium hover:bg-blue-200 transition-colors"
-                        onClick={() => navigate('/isletme/ekran-slider/yeni')}
+                        onClick={() => navigate('/isletme/menuboard/yeni')}
                     >
-                        Yeni Arka Ekran Slider
+                        Yeni MenuBoard Ekle
                     </button>
                     <button className="px-4 py-2 bg-orange-100 text-orange-600 rounded-lg font-medium hover:bg-orange-200 transition-colors">
                         Arşiv

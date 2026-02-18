@@ -177,7 +177,7 @@ const Sidebar = ({ logout }) => {
             title: 'Diğer',
             items: [
                 { title: 'Abonelik', path: '/isletme/siento-faturalari', icon: CreditCard },
-                { title: 'Ürün Puanları', path: '/isletme/urun-hediyeleri', icon: Gift },
+                { title: 'MenuBoard', path: '/isletme/menuboard', icon: Monitor },
                 { title: 'Personel İndirimleri', path: '/isletme/personel-indirimleri', icon: Users },
                 {
                     title: 'Destek',
